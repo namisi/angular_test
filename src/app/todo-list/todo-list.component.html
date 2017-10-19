@@ -1,5 +1,5 @@
 <div class="todoList">
-    <div *ngFor="let todo of todos">
+    <div *ngFor="let todo of todos" (click)="deleteMe(todo)">
         {{todo}}
     </div>
 </div>

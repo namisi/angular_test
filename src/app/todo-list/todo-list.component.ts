@@ -19,4 +19,8 @@ export class TodoListComponent implements OnInit {
   ngOnInit() {
   }
 
+  deleteMe(todo: string) {
+    this.todos = this.todos.filter(s => s !== todo);
+  }
+
 }
